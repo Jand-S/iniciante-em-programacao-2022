@@ -9,21 +9,21 @@
     <link rel="stylesheet" href="base/estilos.css">
 </head>
 <body>
-    <header class="jogador-ativo">Vez do jogador: <span>X</span></header>
+    <header class="jogador-ativo">Vez do jogador: <span data-player>X</span></header>
     <section class="resultado-partida"></section>
     <main class="area-jogo">
+        <div class="quadrado-jogo" data-linha="0" data-coluna="0" onclick="selecionarArea(0, 0)"></div>
+        <div class="quadrado-jogo" data-linha="0" data-coluna="1" onclick="selecionarArea(0, 1)"></div>
+        <div class="quadrado-jogo" data-linha="0" data-coluna="2" onclick="selecionarArea(0, 2)"></div>
+        <div class="quadrado-jogo" data-linha="1" data-coluna="0" onclick="selecionarArea(1, 0)"></div>
         <div class="quadrado-jogo" data-linha="1" data-coluna="1" onclick="selecionarArea(1, 1)"></div>
         <div class="quadrado-jogo" data-linha="1" data-coluna="2" onclick="selecionarArea(1, 2)"></div>
-        <div class="quadrado-jogo" data-linha="1" data-coluna="3" onclick="selecionarArea(1, 3)"></div>
+        <div class="quadrado-jogo" data-linha="2" data-coluna="0" onclick="selecionarArea(2, 0)"></div>
         <div class="quadrado-jogo" data-linha="2" data-coluna="1" onclick="selecionarArea(2, 1)"></div>
         <div class="quadrado-jogo" data-linha="2" data-coluna="2" onclick="selecionarArea(2, 2)"></div>
-        <div class="quadrado-jogo" data-linha="2" data-coluna="3" onclick="selecionarArea(2, 3)"></div>
-        <div class="quadrado-jogo" data-linha="3" data-coluna="1" onclick="selecionarArea(3, 1)"></div>
-        <div class="quadrado-jogo" data-linha="3" data-coluna="2" onclick="selecionarArea(3, 2)"></div>
-        <div class="quadrado-jogo" data-linha="3" data-coluna="3" onclick="selecionarArea(3, 3)"></div>
     </main>
     <footer>
-        <button onclick="reiniciarJogo()" class="botao-reiniciar">Reiniciar jogo</button>
+        <button onclick="reiniciarJogo()" data-btn-reiniciar class="botao-reiniciar">Reiniciar jogo</button>
     </footer>
     
     <script src="base/jogo.js"></script>
